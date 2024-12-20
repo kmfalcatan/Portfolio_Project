@@ -1,0 +1,901 @@
+body{
+    background-color: rgb(39, 54, 59);
+    font-family: "Roboto";
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.container{
+    overflow-x: hidden;
+}
+
+.headerContainer{
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgb(39, 54, 59);
+}
+
+.headerButton{
+    height: 2rem;
+    width: 3rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.headerButton:hover{
+    transform: scale(1.1);
+    background-color: rgb(153, 185, 152);
+    color: black;
+}
+
+.headerButton:active{
+    transform: scale(1);
+    color: rgb(153, 185, 152);
+    border: solid rgb(153, 185, 152) 1px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.headerButton1{
+    height: 2rem;
+    width: 4rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.headerButton1:hover{
+    transform: scale(1.1);
+    background-color: rgb(153, 185, 152);
+    color: black;
+}
+
+.headerButton1:active{
+    transform: scale(1);
+    color: rgb(153, 185, 152);
+    border: solid rgb(153, 185, 152) 1px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.subContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.nameContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(2rem, 10vw, 4rem);
+    font-weight: bold;
+    text-align: center;
+}
+
+span{
+    color: rgb(253, 85, 76);
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.subBackground{
+    height: 65%;
+    width: 33rem;
+    border-radius: 100rem;
+    background-color: rgb(153, 185, 152);
+    filter: blur(60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subBackground1{
+    height: 60%;
+    width: 20rem;
+    border-radius: 100rem;
+    background-color: rgb(253, 206, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textContainer{
+    position: absolute;
+    top: 19%;
+    text-align: center;
+    z-index: -1;
+    font-size: clamp(4.5rem, 15vw, 15rem);
+    font-weight: bold;
+    color: rgb(22, 30, 33);
+    width: 100%;
+}
+
+.imageContainer{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+}
+
+.image{
+    height: 29rem;
+}
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 4rem;
+}
+
+.subAboutContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.borderContainer{
+    border-radius:68% 32% 73% 27% / 52% 61% 39% 48% ;
+    background-color: rgb(153, 185, 152);
+    height: 100%;
+    width: 17.6rem;    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconContainer{
+    height: 3rem;
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    z-index: 60;
+}
+
+.subIconContainer{
+    height: 100%;
+    width: 3rem;
+    border-radius: 5rem;
+    background-color: rgb(39, 54, 59);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+.subIconContainer:hover{
+    transform: scale(1.1);
+}
+
+.subIconContainer:active{
+    transform: scale(1);
+    box-shadow: none;
+}
+
+.image1{
+    height: 2rem;
+}
+
+.image3{
+    height: 100%;
+    width: 17.6rem;    
+    border-radius:68% 32% 73% 27% / 52% 61% 39% 48% ;
+}
+
+.aboutTextContainer{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.skillContainer{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.skillText{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.skillPercent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.subSkillPercent{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.skillName{
+    color: white;
+    font-size: 1.2rem;
+    text-align: right;
+    width: 5rem;
+}
+
+.percentage{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11rem;
+    height: 100%;
+}
+
+.lineContainer{
+    position: absolute;
+    width: 100%;
+    border: solid rgb(244, 131, 125) 0.5px;
+}
+
+.circle{
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 5rem;
+    background-color: rgb(153, 185, 152);
+    left: 0;
+}
+
+.educationContainer{
+    height: 50rem;
+    overflow: hidden;
+    margin-top: 2rem;
+    padding-top: 4rem;
+}
+
+.titleContainer{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.subEducationContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subEducationContainer1{
+    border: solid rgb(244, 131, 125) 0.5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.educContainer{
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    margin-top: 2rem;
+}
+
+.logoContainer{
+    height: 2rem;
+    width: 2rem;
+    z-index: 1;
+    position: relative;
+}
+
+.image2, .image4, .image5{
+    height: 100%;
+    border-radius: 10rem;
+}
+
+.schoolContainer{
+    width: 10rem;
+    position: absolute;
+    top: 0;
+    right: 2.2rem;
+    background-color: rgb(153, 185, 152);
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    border: solid rgb(153, 185, 152) 1px;
+}
+
+.schoolContainer3{
+    width: 10rem;
+    left: 2.2rem;
+    top: 0;
+    position: absolute;
+    background-color: rgb(153, 185, 152);
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    border: solid rgb(153, 185, 152) 1px;
+}
+
+.schoolName{
+    width: 100%;
+    text-align: center;
+    background: url(../img/Untitled\ design.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+.schoolName1{
+    width: 100%;
+    text-align: center;
+    background: url(../img/306282288_406081111676509_5325704502421477584_n.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+.schoolName2{
+    width: 100%;
+    text-align: center;
+    background: url(../img/468118816_10234191232897617_4921271548182879303_n.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+.schoolName3{
+    width: 100%;
+    text-align: center;
+    background: url(../img/Screenshot\ 2024-12-16\ 144922.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+.background3{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.623), rgb(0, 0, 0));
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 0.5rem 0 0.5rem 0;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.projectContainer{
+    margin-top: 2rem;
+    padding-top: 4rem;
+}
+
+.subProjectContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.project{
+    height: 12rem;
+    width: 20rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    border: solid rgb(153, 185, 152) 1px;
+    background-color: rgb(153, 185, 152);
+    position: relative;
+}
+
+.subProject{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+    top: 0;
+}
+
+.imageContainer1{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image6{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.description{
+    height: 6.5rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.subDescription{
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.buttonContainer{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 1rem;
+}
+
+.button{
+    height: 2.5rem;
+    width: 6rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(217, 217, 217);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: solid rgb(217, 217, 217) 1px;
+    color: rgb(217, 217, 217);
+}
+
+.button:active{
+    background-color: rgb(217, 217, 217);
+    color: black;
+    transform: scale(0.9);
+}
+
+.projectDescription{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.349);
+    z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subProjectDescription{
+    width: 90%;
+    background-color: rgb(217, 217, 217);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleContainer1{
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.5rem 0 0.5rem 0;  
+  width: 100%;
+}
+
+.imageContainer2{
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.image8{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.descriptionContainer{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    overflow: auto;
+    height: 10rem;
+    width: 90%;
+    margin: 0.5rem 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+
+}
+
+.buttonContainer1{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+
+.button1{
+    height: 2.5rem;
+    width: 6rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(153, 185, 152);
+    cursor: pointer;
+    transition: all 0.15s;
+    color: rgb(39, 54, 59);
+    margin-right: 1rem;
+}
+
+.button1:hover{
+    background-color: transparent;
+    border: solid rgb(39, 54, 59) 1px;
+    color: rgb(39, 54, 59);
+}
+
+.button1:active{
+    background-color: rgb(153, 185, 152);
+    color: rgb(39, 54, 59);
+    transform: scale(0.9);
+    border: none;
+}
+
+.contactContainer{
+    margin-top: 2rem;
+    padding-top: 3rem;
+}
+
+.imageContainer3{
+    height: 20rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image9{
+    height: 100%;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subMessage{
+    width: 90%;
+    height: 10rem;
+    padding: 0.5rem 0 0 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    background-color: rgb(253, 206, 170);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    font-family: 'Roboto';
+}
+
+.email{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subEmail{
+    background-color: rgb(253, 206, 170);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    font-family: 'Roboto';
+    height: 3rem;
+    width: 90%;
+    border: none;
+    padding: 0 0 0 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.buttonContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+}
+
+.button2{
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    background-color: rgb(153, 185, 152);
+}
+
+.button2:hover{
+    background-color: transparent;
+    border: solid rgb(153, 185, 152) 1px;
+    color: rgb(153, 185, 152);
+}
+
+.button2:active{
+    transform: scale(0.9);
+    box-shadow: none;
+    border: none;
+    background-color: rgb(153, 185, 152);
+    color: black;
+}
+
+.socialContainer{
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.subSocialContainer{
+    height: 3rem;
+    border-radius: 5rem;
+    width: 3rem;
+    background-color: rgb(153, 185, 152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+.subSocialContainer:hover{
+    transform: scale(1.1);
+}
+
+.subSocialContainer:active{
+    transform: scale(1);
+}
+
+.socialIcon{
+    height: 2rem;
+    filter: invert();
+}
+
+.textContainer1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.aboutContainer, .educationContainer, .projectContainer, .contactContainer{
+    border-top: solid rgb(153, 185, 152) 1px;
+}
+
+/*tablet*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .nameContainer{
+        font-size: 3rem;
+    }
+
+    .schoolContainer, .schoolContainer3{
+        width: 17rem;
+        height: 10rem;
+    }
+
+    .background3{
+        height: 10rem;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .schoolName, .schoolName3{
+        height: 10rem;
+    }
+
+    .educationContainer{
+        padding-bottom: 1rem;
+    }
+
+    .headerButton, .headerButton1{
+        width: 6rem;
+        font-size: 1.2rem;
+    }
+
+    .aboutContainer, .educationContainer, .projectContainer, .contactContainer{
+        border-top: solid rgb(153, 185, 152) 1px;
+    }
+}
+
+/*laptop*/
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+    .nameContainer{
+        font-size: 3rem;
+    }
+
+    .schoolContainer, .schoolContainer3{
+        width: 30rem;
+        height: 10rem;
+    }
+
+    .background3{
+        height: 10rem;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .schoolName, .schoolName3{
+        height: 10rem;
+    }
+
+    .educationContainer{
+        padding-bottom: 1rem;
+    }
+
+    .headerButton, .headerButton1{
+        width: 6rem;
+        font-size: 1.2rem;
+    }
+
+    .aboutrow{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    .borderContainer{
+        width: 90%;
+    }
+
+    .image3{
+        width: 100%;
+    }
+
+    .subAboutContainer{
+        border-left: solid rgb(153, 185, 152) 1px;
+    }
+
+    .aboutContainer, .educationContainer, .projectContainer, .contactContainer{
+        border-top: solid rgb(153, 185, 152) 1px;
+    }
+
+    .subProjectDescription{
+        width: 50rem;
+    }
+}
+
+/*pc*/
+@media only screen and (min-width: 1441px){
+    .nameContainer{
+        font-size: 5rem;
+    }
+
+    .schoolContainer, .schoolContainer3{
+        width: 43rem;
+        height: 10rem;
+    }
+
+    .background3{
+        height: 10rem;
+        padding: 0;
+        font-size: 1.8rem;
+    }
+
+    .schoolName, .schoolName3{
+        height: 10rem;
+    }
+
+    .educationContainer{
+        padding-bottom: 1rem;
+    }
+
+    .headerButton, .headerButton1{
+        width: 6rem;
+        font-size: 1.2rem;
+    }
+
+    .aboutrow{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    .borderContainer{
+         width: 25rem;
+    }
+
+    .image3{
+        width: 100%;
+    }
+
+    .textContainer{
+        font-size: 12rem;
+    }
+
+    .image{
+        height: 34rem;
+    }
+
+    .subAboutContainer{
+        height: 25rem;
+    }
+
+    .subAboutContainer{
+        border-left: solid rgb(153, 185, 152) 1px;
+    }
+
+    .aboutContainer, .educationContainer, .projectContainer, .contactContainer{
+        border-top: solid rgb(153, 185, 152) 1px;
+    }
+
+    .subProjectDescription{
+        width: 60rem;
+    }
+}
